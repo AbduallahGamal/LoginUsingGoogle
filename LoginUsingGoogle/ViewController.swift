@@ -32,20 +32,14 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
         GIDSignIn.sharedInstance()?.uiDelegate = self
         GIDSignIn.sharedInstance()?.signIn()
     }
+    
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         
         if let error = error
-        {
-            print("We have an error ==\(error.localizedDescription)")
-        }
-        else
-        {
-            if let gmailUser = user
-            {
-              lblTitle.text = "You are sign in using id \(gmailUser.profile.email)"
-                loginUsingGoogle.setTitle("Sign Out", for: .normal)
-                
-            }
+        { print("We have an error ==\(error.localizedDescription)") }
+        else { if let gmailUser = user
+        { lblTitle.text = "You are sign in using id \(String(describing: gmailUser.profile.email))"
+                loginUsingGoogle.setTitle("Sign Out", for: .normal) }
         }
     }
 }
