@@ -18,6 +18,8 @@ class ViewController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         loginUsingGoogle.addTarget(self, action: #selector(loginGoogle(_:)), for: .touchUpInside)
+        Utilities.styleFilledButton(loginUsingGoogle)
+        Utilities.styleHollowButton(loginUsingGoogle)
     }
 
     @IBAction func loginGoogle(_ sender: Any) {

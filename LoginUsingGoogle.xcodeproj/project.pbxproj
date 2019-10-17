@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AEF62142359195700850B66 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEF62132359195700850B66 /* Utilities.swift */; };
 		8AF086402358E4C800D1E607 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF0863F2358E4C800D1E607 /* AppDelegate.swift */; };
 		8AF086422358E4C800D1E607 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF086412358E4C800D1E607 /* ViewController.swift */; };
 		8AF086452358E4C800D1E607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF086432358E4C800D1E607 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		80DC8F35057AF49F3CD1934F /* Pods_LoginUsingGoogle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginUsingGoogle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AEF62132359195700850B66 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		8AF0863C2358E4C800D1E607 /* LoginUsingGoogle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginUsingGoogle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF0863F2358E4C800D1E607 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AF086412358E4C800D1E607 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,9 +97,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8AEF62122359193D00850B66 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8AEF62132359195700850B66 /* Utilities.swift */,
+				8AF0867223590F0500D1E607 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		8AF086332358E4C800D1E607 = {
 			isa = PBXGroup;
 			children = (
+				8AEF62122359193D00850B66 /* Helpers */,
 				8AF0863E2358E4C800D1E607 /* LoginUsingGoogle */,
 				8AF086562358E4CC00D1E607 /* LoginUsingGoogleTests */,
 				8AF086612358E4CC00D1E607 /* LoginUsingGoogleUITests */,
@@ -121,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				8AF086702358EB6C00D1E607 /* credentials.plist */,
+				8AF0867423590F7600D1E607 /* HomeViewController.swift */,
 				8AF0863F2358E4C800D1E607 /* AppDelegate.swift */,
 				8AF086412358E4C800D1E607 /* ViewController.swift */,
 				8AF086432358E4C800D1E607 /* Main.storyboard */,
@@ -128,8 +141,6 @@
 				8AF0864B2358E4CC00D1E607 /* LaunchScreen.storyboard */,
 				8AF0864E2358E4CC00D1E607 /* Info.plist */,
 				8AF086462358E4C800D1E607 /* LoginUsingGoogle.xcdatamodeld */,
-				8AF0867223590F0500D1E607 /* Constants.swift */,
-				8AF0867423590F7600D1E607 /* HomeViewController.swift */,
 			);
 			path = LoginUsingGoogle;
 			sourceTree = "<group>";
@@ -355,6 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AEF62142359195700850B66 /* Utilities.swift in Sources */,
 				8AF0867523590F7600D1E607 /* HomeViewController.swift in Sources */,
 				8AF086422358E4C800D1E607 /* ViewController.swift in Sources */,
 				8AF086482358E4C800D1E607 /* LoginUsingGoogle.xcdatamodeld in Sources */,
