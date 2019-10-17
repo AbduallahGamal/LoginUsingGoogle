@@ -15,6 +15,7 @@
 		8AF0864D2358E4CC00D1E607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF0864B2358E4CC00D1E607 /* LaunchScreen.storyboard */; };
 		8AF086582358E4CC00D1E607 /* LoginUsingGoogleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF086572358E4CC00D1E607 /* LoginUsingGoogleTests.swift */; };
 		8AF086632358E4CC00D1E607 /* LoginUsingGoogleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF086622358E4CC00D1E607 /* LoginUsingGoogleUITests.swift */; };
+		BAB4BDF7BB07597D6C7B472E /* Pods_LoginUsingGoogle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80DC8F35057AF49F3CD1934F /* Pods_LoginUsingGoogle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		80DC8F35057AF49F3CD1934F /* Pods_LoginUsingGoogle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginUsingGoogle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF0863C2358E4C800D1E607 /* LoginUsingGoogle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginUsingGoogle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF0863F2358E4C800D1E607 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AF086412358E4C800D1E607 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		8AF0865E2358E4CC00D1E607 /* LoginUsingGoogleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginUsingGoogleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF086622358E4CC00D1E607 /* LoginUsingGoogleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUsingGoogleUITests.swift; sourceTree = "<group>"; };
 		8AF086642358E4CC00D1E607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8E01BE6486CA68129E26C4F /* Pods-LoginUsingGoogle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginUsingGoogle.release.xcconfig"; path = "Target Support Files/Pods-LoginUsingGoogle/Pods-LoginUsingGoogle.release.xcconfig"; sourceTree = "<group>"; };
+		F1C025211BA95751E9E43F2E /* Pods-LoginUsingGoogle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginUsingGoogle.debug.xcconfig"; path = "Target Support Files/Pods-LoginUsingGoogle/Pods-LoginUsingGoogle.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAB4BDF7BB07597D6C7B472E /* Pods_LoginUsingGoogle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43FD7C50190F5B35AAE71A2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80DC8F35057AF49F3CD1934F /* Pods_LoginUsingGoogle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8AF086332358E4C800D1E607 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +96,8 @@
 				8AF086562358E4CC00D1E607 /* LoginUsingGoogleTests */,
 				8AF086612358E4CC00D1E607 /* LoginUsingGoogleUITests */,
 				8AF0863D2358E4C800D1E607 /* Products */,
+				BFA2BCD1FA13B2F28A4C61BF /* Pods */,
+				43FD7C50190F5B35AAE71A2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +143,16 @@
 			path = LoginUsingGoogleUITests;
 			sourceTree = "<group>";
 		};
+		BFA2BCD1FA13B2F28A4C61BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1C025211BA95751E9E43F2E /* Pods-LoginUsingGoogle.debug.xcconfig */,
+				B8E01BE6486CA68129E26C4F /* Pods-LoginUsingGoogle.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +160,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AF086672358E4CC00D1E607 /* Build configuration list for PBXNativeTarget "LoginUsingGoogle" */;
 			buildPhases = (
+				33CC9A01E54D4715FBB5F25C /* [CP] Check Pods Manifest.lock */,
 				8AF086382358E4C800D1E607 /* Sources */,
 				8AF086392358E4C800D1E607 /* Frameworks */,
 				8AF0863A2358E4C800D1E607 /* Resources */,
+				E4F9D5ED8B91E825B40F7B31 /* [CP] Embed Pods Frameworks */,
+				A98889844AEDEF47ECBD952B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +281,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33CC9A01E54D4715FBB5F25C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoginUsingGoogle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A98889844AEDEF47ECBD952B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginUsingGoogle/Pods-LoginUsingGoogle-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginUsingGoogle/Pods-LoginUsingGoogle-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginUsingGoogle/Pods-LoginUsingGoogle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4F9D5ED8B91E825B40F7B31 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginUsingGoogle/Pods-LoginUsingGoogle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginUsingGoogle/Pods-LoginUsingGoogle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginUsingGoogle/Pods-LoginUsingGoogle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8AF086382358E4C800D1E607 /* Sources */ = {
@@ -434,10 +521,12 @@
 		};
 		8AF086682358E4CC00D1E607 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1C025211BA95751E9E43F2E /* Pods-LoginUsingGoogle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LoginUsingGoogle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,10 +540,12 @@
 		};
 		8AF086692358E4CC00D1E607 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8E01BE6486CA68129E26C4F /* Pods-LoginUsingGoogle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LoginUsingGoogle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
