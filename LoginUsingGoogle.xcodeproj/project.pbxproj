@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		8AF0864D2358E4CC00D1E607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF0864B2358E4CC00D1E607 /* LaunchScreen.storyboard */; };
 		8AF086582358E4CC00D1E607 /* LoginUsingGoogleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF086572358E4CC00D1E607 /* LoginUsingGoogleTests.swift */; };
 		8AF086632358E4CC00D1E607 /* LoginUsingGoogleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF086622358E4CC00D1E607 /* LoginUsingGoogleUITests.swift */; };
+		8AF086712358EB6C00D1E607 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AF086702358EB6C00D1E607 /* credentials.plist */; };
+		8AF0867323590F0500D1E607 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF0867223590F0500D1E607 /* Constants.swift */; };
+		8AF0867523590F7600D1E607 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF0867423590F7600D1E607 /* HomeViewController.swift */; };
 		BAB4BDF7BB07597D6C7B472E /* Pods_LoginUsingGoogle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80DC8F35057AF49F3CD1934F /* Pods_LoginUsingGoogle.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +54,9 @@
 		8AF0865E2358E4CC00D1E607 /* LoginUsingGoogleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginUsingGoogleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF086622358E4CC00D1E607 /* LoginUsingGoogleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUsingGoogleUITests.swift; sourceTree = "<group>"; };
 		8AF086642358E4CC00D1E607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AF086702358EB6C00D1E607 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
+		8AF0867223590F0500D1E607 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8AF0867423590F7600D1E607 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B8E01BE6486CA68129E26C4F /* Pods-LoginUsingGoogle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginUsingGoogle.release.xcconfig"; path = "Target Support Files/Pods-LoginUsingGoogle/Pods-LoginUsingGoogle.release.xcconfig"; sourceTree = "<group>"; };
 		F1C025211BA95751E9E43F2E /* Pods-LoginUsingGoogle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginUsingGoogle.debug.xcconfig"; path = "Target Support Files/Pods-LoginUsingGoogle/Pods-LoginUsingGoogle.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +120,7 @@
 		8AF0863E2358E4C800D1E607 /* LoginUsingGoogle */ = {
 			isa = PBXGroup;
 			children = (
+				8AF086702358EB6C00D1E607 /* credentials.plist */,
 				8AF0863F2358E4C800D1E607 /* AppDelegate.swift */,
 				8AF086412358E4C800D1E607 /* ViewController.swift */,
 				8AF086432358E4C800D1E607 /* Main.storyboard */,
@@ -121,6 +128,8 @@
 				8AF0864B2358E4CC00D1E607 /* LaunchScreen.storyboard */,
 				8AF0864E2358E4CC00D1E607 /* Info.plist */,
 				8AF086462358E4C800D1E607 /* LoginUsingGoogle.xcdatamodeld */,
+				8AF0867223590F0500D1E607 /* Constants.swift */,
+				8AF0867423590F7600D1E607 /* HomeViewController.swift */,
 			);
 			path = LoginUsingGoogle;
 			sourceTree = "<group>";
@@ -149,7 +158,6 @@
 				F1C025211BA95751E9E43F2E /* Pods-LoginUsingGoogle.debug.xcconfig */,
 				B8E01BE6486CA68129E26C4F /* Pods-LoginUsingGoogle.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -261,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AF0864D2358E4CC00D1E607 /* LaunchScreen.storyboard in Resources */,
+				8AF086712358EB6C00D1E607 /* credentials.plist in Resources */,
 				8AF0864A2358E4CC00D1E607 /* Assets.xcassets in Resources */,
 				8AF086452358E4C800D1E607 /* Main.storyboard in Resources */,
 			);
@@ -346,9 +355,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AF0867523590F7600D1E607 /* HomeViewController.swift in Sources */,
 				8AF086422358E4C800D1E607 /* ViewController.swift in Sources */,
 				8AF086482358E4C800D1E607 /* LoginUsingGoogle.xcdatamodeld in Sources */,
 				8AF086402358E4C800D1E607 /* AppDelegate.swift in Sources */,
+				8AF0867323590F0500D1E607 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
