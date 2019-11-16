@@ -34,19 +34,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLW-l9-70C">
+                                <rect key="frame" x="114" y="424" width="185" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Launch Help"/>
+                                <connections>
+                                    <action selector="doCTHelpFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tq5-eJ-dch"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="JsQ-Qc-lUp"/>
                     <connections>
+                        <outlet property="CTHHelp" destination="bLW-l9-70C" id="uWF-Hc-iYK"/>
                         <outlet property="lblTitle" destination="wXz-eL-T30" id="tBG-Hr-QYc"/>
                         <outlet property="loginUsingGoogle" destination="Vfe-sv-5Bm" id="FQz-BU-AeL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1272" y="104"/>
+            <point key="canvasLocation" x="1271.0144927536232" y="103.79464285714285"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="F60-Xh-Poq">

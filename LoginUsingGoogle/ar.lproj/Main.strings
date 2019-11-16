@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Login Using Google"; ObjectID = "Vfe-sv-5Bm"; */
+"Vfe-sv-5Bm.normalTitle" = "التسجيل باستخدام جوجل";
+
+/* Class = "UIButton"; normalTitle = "Launch Help"; ObjectID = "bLW-l9-70C"; */
+"bLW-l9-70C.normalTitle" = "اذهب للمساعدة";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "wXz-eL-T30"; */
+"wXz-eL-T30.text" = "وصف";

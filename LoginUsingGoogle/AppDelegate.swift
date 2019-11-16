@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import GoogleSignIn
+import CTHelp
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

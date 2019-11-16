@@ -8,6 +8,6 @@ target 'LoginUsingGoogle' do
   # Pods for LoginUsingGoogle
 
   pod 'GoogleSignIn'
-
+  pod 'CTHelp'
 
 end
